@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Time Zones</title>
+	<meta name="generator" content="BBEdit 9.6" />
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  <script type="text/javascript" src="democlock.js"></script>
+
+  <style type="text/css">
+    div#europe { clear: both; }
+    div#usa { clear: both; padding-top: 20px; }
+
+    div.clock { float:left; }
+    div.clockLabel { text-align: center; font-size: smaller; }
+  </style>
+
+</head>
+<body>
+
+  <div id="europe">
+    <h2>Europe</h2>
+
+    <div class="clock">
+      <canvas id="reykjavik" class="CoolClock:swissRail:50:noSeconds:0:0"></canvas>
+      <div class="clockLabel">Reykjavik</div>
+    </div>
+    <div class="clock">
+      <canvas id="london" class="CoolClock:swissRail:50:noSeconds:0:1:2"></canvas><br>
+      <div class="clockLabel">London</div>
+    </div>
+    <div class="clock">
+      <canvas id="berlin" class="CoolClock:swissRail:50:noSeconds:1:2:3"></canvas><br>
+      <div class="clockLabel">Berlin</div>
+    </div>
+    <div class="clock">
+      <canvas id="helsinki" class="CoolClock:swissRail:50:noSeconds:2:3:4"></canvas><br>
+      <div class="clockLabel">Helsinki</div>
+    </div>
+  </div>
+
+  <div id="usa">
+    <h2>United States</h2>
+
+    <div class="clock">
+      <canvas id="losangeles" class="CoolClock:swissRail:50:noSeconds:-8:-7:2"></canvas>
+      <div class="clockLabel">San Francisco</div>
+    </div>
+    <div class="clock">
+      <canvas id="denver" class="CoolClock:swissRail:50:noSeconds:-7:-6:2"></canvas>
+      <div class="clockLabel">Denver</div>
+    </div>
+    <div class="clock">
+      <canvas id="neworleans" class="CoolClock:swissRail:50:noSeconds:-6:-5:2"></canvas>
+      <div class="clockLabel">New Orleans</div>
+    </div>
+    <div class="clock">
+      <canvas id="newyork" class="CoolClock:swissRail:50:noSeconds:-5:-4:2"></canvas>
+      <div class="clockLabel">New York</div>
+    </div>
+  </div>
+
+</body>
+</html>

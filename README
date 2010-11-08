@@ -1,0 +1,3 @@
+A quick hack on top of Simon Baird's CoolClock Canvas/JS library 
+to visualise how time zone transitions are handled in Europe vs
+the way they happen in the US.
