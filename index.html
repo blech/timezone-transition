@@ -1,80 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8" />
+	<title>Time Zones</title>
+	<meta name="generator" content="BBEdit 9.6" />
 
-	<title>blech/timezone-transition @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #e3515a;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #1caea5; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #1caea5; }
-    h3 { text-align: center; color: #1caea5; }
-    a { color: #1caea5; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  <script type="text/javascript" src="democlock.js"></script>
+
+  <style type="text/css">
+    div#europe { clear: both; }
+    div#usa { clear: both; padding-top: 20px; }
+
+    div.clock { float:left; }
+    div.clockLabel { text-align: center; font-size: smaller; }
+  </style>
+
 </head>
-
 <body>
-  <a href="http://github.com/blech/timezone-transition"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <div id="container">
+  <div id="europe">
+    <h2>Europe</h2>
 
-    <div class="download">
-      <a href="http://github.com/blech/timezone-transition/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/blech/timezone-transition/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    <div class="clock">
+      <canvas id="reykjavik" class="CoolClock:swissRail:50:noSeconds:0:0"></canvas>
+      <div class="clockLabel">Reykjavik</div>
     </div>
-
-    <h1><a href="http://github.com/blech/timezone-transition">timezone-transition</a>
-      <span class="small">by <a href="http://github.com/blech">blech</a></span></h1>
-
-    <div class="description">
-      A hackish visualisation of synced vs unsynced timezone transitions
+    <div class="clock">
+      <canvas id="london" class="CoolClock:swissRail:50:noSeconds:0:1:2"></canvas><br>
+      <div class="clockLabel">London</div>
     </div>
-
-    <h2>Authors</h2>
-<p>Paul Mison (misonp+git@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Paul Mison (misonp@googlemail.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/blech/timezone-transition/zipball/master">zip</a> or
-      <a href="http://github.com/blech/timezone-transition/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/blech/timezone-transition</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/blech/timezone-transition">blech/timezone-transition</a>
+    <div class="clock">
+      <canvas id="berlin" class="CoolClock:swissRail:50:noSeconds:1:2:3"></canvas><br>
+      <div class="clockLabel">Berlin</div>
     </div>
-
+    <div class="clock">
+      <canvas id="helsinki" class="CoolClock:swissRail:50:noSeconds:2:3:4"></canvas><br>
+      <div class="clockLabel">Helsinki</div>
+    </div>
   </div>
 
-  
+  <div id="usa">
+    <h2>United States</h2>
+
+    <div class="clock">
+      <canvas id="losangeles" class="CoolClock:swissRail:50:noSeconds:-8:-7:2"></canvas>
+      <div class="clockLabel">San Francisco</div>
+    </div>
+    <div class="clock">
+      <canvas id="denver" class="CoolClock:swissRail:50:noSeconds:-7:-6:2"></canvas>
+      <div class="clockLabel">Denver</div>
+    </div>
+    <div class="clock">
+      <canvas id="neworleans" class="CoolClock:swissRail:50:noSeconds:-6:-5:2"></canvas>
+      <div class="clockLabel">New Orleans</div>
+    </div>
+    <div class="clock">
+      <canvas id="newyork" class="CoolClock:swissRail:50:noSeconds:-5:-4:2"></canvas>
+      <div class="clockLabel">New York</div>
+    </div>
+  </div>
+
 </body>
 </html>
